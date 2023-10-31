@@ -1,0 +1,24 @@
+#Balenciaga {
+    min-width: 77%;
+}
+
+.container_product_specification {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#product_describtion {
+    padding-left: 10%;
+}
+
+#add-to-bag {
+    min-width: 50%;
+    height: 50px;
+    font-size: x-large;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#materials p {
+    margin-bottom: 0rem;
+}

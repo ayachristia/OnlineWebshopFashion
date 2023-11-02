@@ -1,0 +1,39 @@
+.product {
+    text-align: start;
+}
+
+main {
+    padding: 11% 0;
+}
+
+.product__img {
+    width: 77%;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 2% 5%;
+}
+
+#add-to-bag {
+    width: 50%;
+    height: 50px;
+    font-size: x-large;
+    margin: 2% 0;
+}
+
+#materials p {
+    margin-bottom: 0rem;
+}
+
+@media (max-width: 992px) {
+    .product__imgBox {
+        text-align: center;
+    }
+
+    .product__info {
+        padding: 0 0 0 10%;
+    }
+
+    #add-to-bag {
+        margin: 0 0 0 10%;
+    }
+}

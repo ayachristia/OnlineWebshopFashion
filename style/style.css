@@ -1,0 +1,271 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: rgb(113, 106, 106);
+	background-color: beige;
+	font-size: 16px;
+}
+
+/* CONTAINER til main */
+.container {
+	margin: 0 auto;
+	width: 1300px;
+}
+
+
+
+/* ------------ navigation i header  */
+
+.navbar {
+	overflow: visible;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	padding: 0 5% 0 5%;
+	background-color: rgba(255, 255, 255, 0.832);
+}
+
+.navbar-brand img {
+	width: 100px;
+	opacity: 0.3;
+}
+
+.navbar div a:hover {
+	color: black;
+}
+
+#navbarNav ul li {
+	list-style: none;
+	position: relative;
+}
+
+#navbarNav ul li a {
+	color: rgba(51, 51, 51, 0.651);
+	text-decoration: none;
+	font-size: 25px;
+	line-height: 40px;
+}
+
+#navbarNav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+/* Den her sørger for at drop down kun dukker op ved hover, hvordan? */
+#navbarNav ul li:hover>ul {
+	display: block;
+}
+
+nav div a {
+	color: grey;
+}
+
+.dropdown-content {
+	background-color: rgba(255, 255, 255, 0.787);
+}
+
+.dropdown__spot1 {
+	display: none;
+}
+
+/* DROP DOWN SEARCH OPTION NAV */
+
+.dropbtn {
+	cursor: default;
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+	color: grey;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+	border: none;
+	position: block;
+	color: black;
+}
+
+#myInput {
+	box-sizing: border-box;
+	background-image: url('searchicon.png');
+	background-position: 14px 12px;
+	background-repeat: no-repeat;
+	font-size: 16px;
+	padding: 14px 20px 12px 45px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+	outline: 3px solid #ddd;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 230px;
+	overflow: auto;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover {
+	background-color: rgba(221, 221, 221, 0);
+}
+
+.show {
+	display: block;
+}
+
+/* LOGO DESIGN */
+
+.logo_design {
+	font-size: 40px;
+}
+
+.logo_design_1 {
+	max-width: 18%;
+}
+
+.logo_design_arrow {
+	font-size: 55px;
+	color: grey;
+}
+
+/* MAIN CONTENT */
+
+.heading {
+	border-bottom: 1px solid lightgray;
+}
+
+main {
+	margin-top: 10%;
+}
+
+main article a {
+	text-decoration: none;
+	color: grey;
+	font-size: large;
+}
+
+article a:hover {
+	color: black;
+}
+
+
+
+
+/* FOOTER  */
+
+footer {
+	background-color: rgba(174, 172, 172, 0.72);
+}
+
+footer ul li {
+	list-style: none;
+}
+
+footer li a,
+footer section a {
+	text-decoration: none;
+	color: rgb(113, 106, 106);
+}
+
+footer li a:hover {
+	color: rgb(15, 15, 15);
+}
+
+#primary_footer {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+/* #shortcuts_img_html {
+	min-height: 500px;
+	max-width: 500px;
+} */
+
+#shortcuts_img_productpage {
+	height: 250px;
+	width: 300px;
+}
+
+
+/* SALE PAGE */
+
+.sale_headline {
+	padding-top: 8%;
+	padding-bottom: 1%;
+	text-align: center;
+	color: rgb(113, 106, 106);
+	font-size: 75px;
+}
+
+.sale_seperate {
+	text-align: center;
+
+}
+
+#index_shoe {
+	opacity: 0.4;
+	max-width: 750px;
+}
+
+@media (max-width: 991px) {
+	.navbar {
+		background-color: rgba(255, 255, 255, 0);
+		width: 20%;
+		font-size: 14px;
+		padding: 0 0 0 1%;
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	.dropdown__spot1 {
+		display: block;
+	}
+
+	.dropdown__spot2 {
+		display: none;
+	}
+
+	.navbar-toggler-icon {
+		opacity: 0.6;
+	}
+
+
+	.nav-item {
+		display: flex;
+		flex-direction: column;
+		margin-top: 2%;
+		gap: 2em;
+	}
+
+	.bi {
+		font-size: 20px;
+	}
+
+	.dropdown-content {
+		padding: 0 0 0 25%;
+	}
+
+	.dropdown__links {
+		font-size: 16px !important;
+	}
+}
